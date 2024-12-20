@@ -1,7 +1,7 @@
 from django.db import models
 
 class author(models.Model):
-    kode_penulis = models.TextField()
+    kode_penulis = models.CharField(max_length=4)
     nama_penulis = models.TextField()
     alamat_penulis = models.TextField()
     kota_penulis = models.TextField()

@@ -18,23 +18,23 @@
         <table id="test" class="display" style="width: 100%;">
             <thead>
                 <tr>
-                    <th>KODE PENERBIT</th>
-                    <th>NAMA PENERBIT</th>
-                    <th>ALAMAT PENERBIT</th>
-                    <th>KOTA PENERBIT</th>
-                    <th>EMAIL PENERBIT</th>
-                    <th>TELP PENERBIT</th>
+                    <th>KODE PENULIS</th>
+                    <th>NAMA PENULIS</th>
+                    <th>ALAMAT PENULIS</th>
+                    <th>KOTA PENULIS</th>
+                    <th>TELP PENULIS</th>
+                    <th>EMAIL PENULIS</th>
                 </tr>
             </thead>
             <tbody>
-                {% for penerbit in Penerbit %}
+                {% for author in Penulis %}
                 <tr>
-                    <td>{{penerbit.kode_penerbit}}</td>
-                    <td>{{penerbit.nama_penerbit}}</td> 
-                    <td>{{penerbit.alamat_penerbit}}</td>
-                    <td>{{penerbit.kota_penerbit}}</td>
-                    <td>{{penerbit.email_penerbit}}</td>
-                    <td>{{penerbit.telp_penerbit}}</td>
+                    <td>{{penulis.kode_penulis}}</td>
+                    <td>{{penulis.nama_penulis}}</td> 
+                    <td>{{penulis.alamat_penulis}}</td>
+                    <td>{{penulis.kota_penulis}}</td>
+                    <td>{{penulis.telp_penulis}}</td>
+                    <td>{{penulis.penulis_penulis}}</td>
                 </tr>
                 {% endfor %}
             </tbody>
