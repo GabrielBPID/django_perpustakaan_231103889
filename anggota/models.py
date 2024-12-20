@@ -6,3 +6,6 @@ class Member(models.Model):
     tanggal_lahir = models.TextField()
     tempat_tinggal = models.TextField
     profesi = models.TextField()
+    
+    def __str__(self):
+        return self.nama_anggota

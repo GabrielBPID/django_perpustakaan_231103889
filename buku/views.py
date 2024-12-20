@@ -1,11 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render 
+
 from .models import Book
 
 def index(request):
-    buku = buku.objects.all()
+    buku = Book.objects.all()
     context ={
-        'Title' : 'Perpustakaan STMIK Potianak',
+        'Title' : 'Perpustakaan STMIK Pontianak',
         'Heading' : 'Daftar Buku Ilmu Komputer',
-        'Book' : buku,
+        'Buku' : buku,
     }
-return render(request, 'index.html', context)
+    return render(request, 'index.html', context)

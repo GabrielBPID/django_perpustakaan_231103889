@@ -13,30 +13,30 @@
 </head>
 <body>
     <div class="container">
-        <h1 style="text-align: center;">{{Tittle}}</h1>
+        <h1 style="text-align: center;">{{Title}}</h1>
         <h2 style="text-align: center;">{{Heading}}</h2>
-        <table id="test" class="display" style="width:100%">
+        <table id="test" class="display" style="width: 100%;">
             <thead>
-            <tr>    
-                <th>Kode Buku</th>
-                <th>Juduk Buku</th>
-                <th>Pengarang</th>
-                <th>Penerbit</th>
-                <th>Tahun</th>
-            </tr>
+                <tr>
+                    <th>KODE BUKU</th>
+                    <th>JUDUL BUKU</th>
+                    <th>PENERBIT</th>
+                    <th>PENGARANG</th>
+                    <th>TAHUN</th>
+                </tr>
             </thead>
-        </tbody>
-        {% for buku in Book %}
-            <tr>
-                <td>{{buku.kode_buku}}</td>
-                <td>{{buku.judul_buku}}</td>
-                <td>{{buku.pengarang}}</td>
-                <td>{{buku.penerbit}}</td>
-                <td>{{buku.tahun}}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            <tbody>
+                {% for buku in Buku %}
+                <tr>
+                    <td>{{buku.kode_buku}}</td>
+                    <td>{{buku.judul_buku}}</td> 
+                    <td>{{buku.penerbit}}</td>
+                    <td>{{buku.pengarang}}</td>
+                    <td>{{buku.tahun}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
