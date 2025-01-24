@@ -9,4 +9,4 @@ def index(request):
         'Heading' : 'Daftar Anggota',
         'Anggota' : anggota,
     }
-    return render(request, 'anggota\index.html', context)
+    return render(request, 'anggota.html', context)

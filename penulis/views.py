@@ -9,4 +9,4 @@ def index(request):
         'Heading' : 'Daftar Penulis Buku',
         'Penulis' : penulis,
     }
-    return render(request, 'penulis\index.html', context)
+    return render(request, 'penulis.html', context)
